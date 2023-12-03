@@ -1,0 +1,29 @@
+GET http://localhost:8000/students
+
+###
+
+GET http://localhost:8000/students/656c72fa36dbe1b3d8aa0209
+
+###
+
+POST http://localhost:8000/students
+Content-Type: application/json
+
+{
+    "name": "Jaden Bair",
+    "class": "DWA"
+}
+
+###
+
+DELETE  http://localhost:8000/students/656c730936dbe1b3d8aa020b
+
+###
+
+PATCH http://localhost:8000/students/656c730936dbe1b3d8aa020b
+Content-Type: application/json
+
+{
+    "name": "new name",
+    "class": "new class"
+}
