@@ -74,3 +74,6 @@ router.delete("/:id", getStudent, async (req, res) => {
 });
 
 module.exports = router;
+
+
+//mongodb+srv://jmbair:HjQKlMbjoF2XvcQm@cluster0.evk4ctl.mongodb.net/?retryWrites=true&w=majority
