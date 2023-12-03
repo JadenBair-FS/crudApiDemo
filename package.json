@@ -13,7 +13,7 @@
     "start": "npm start --prefex api",
     "dev:react": "concurrently --raw \"npm run api\" \"npm run react\"",
     "react": "cd reactjs && npm run start",
-    "api": "cd api && nodemon server.js"
+    "api": "cd api; && nodemon server.js"
   },
   "dependencies": {
     "concurrently": "^8.2.2"
