@@ -24,10 +24,10 @@ db.once("open", () => console.log("Connected to database"));
 app.use(express.json());
 app.use("/api/v1/students", studentRouter);
 
-app.use(express.static(path.join(__dirname, "./reactjs/build")));
+app.use(express.static(path.join(__dirname, "../reactjs/build")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./reactjs/build", "index.html"));
+  res.sendFile(path.join(__dirname, "../reactjs/build", "index.html"));
 });
 
 app.listen(PORT, () => {
